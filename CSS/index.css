@@ -1,72 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+/* ===== Light Mode Variables ===== */
+:root {
+  --color-bg: #F8F9FA;
+  --color-text: #212529;
+  --color-accent1: #4A90E2;  /* Calm Blue */
+  --color-accent2: #F5A623;  /* Warm Orange */
+  --color-accent3: #7ED321;  /* Fresh Green */
+  --color-accent4: #9B51E0;  /* Lavender */
+  --color-accent5: #50E3C2;  /* Muted Teal */
+  --color-accent6: #EB5757;  /* Soft Red */
 }
 
-body {
-    background-color: rgb(20, 20, 20);
-    color: white;
+/* ===== Dark Mode Variables ===== */
+.dark-mode {
+  --color-bg: #0F0F0F;
+  --color-text: #EDEDED;
+  --color-accent1: #B56F1D;  /* Opp. Orange */
+  --color-accent2: #0A5DDC;  /* Opp. Blue */
+  --color-accent3: #64AE1F;  /* Opp. Green */
+  --color-accent4: #812CDE;  /* Opp. Magenta */
+  --color-accent5: #14A8A8;  /* Opp. Mint */
+  --color-accent6: #AF1C3D;  /* Opp. Coral */
 }
 
-header {
-    background-color: rgb(30, 30, 30);
+.logo-text {
+  cursor: default;
+}
+
+img {
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-}
-
-.logo {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2.5em;
-    margin: 12px 20px
-}
-
-.logo > a {
-    color: white;
-}
-
-nav > ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    height: 100%;
-    gap: 12px;
-    margin-right: 16px;
-}
-
-nav> ul > li > a {
-    color: white;
-    font-size: 1.2rem;
-    padding: 16px 16px;
+.button {
+    background-color: var(--color-accent2);
+    color: #FFFFFF;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
     transition: 0.2s ease-in;
 }
 
-nav > ul > li > a:hover {
-    background-color: rgb(20, 20, 20);
-    border-radius: 12px;
-    border: 1px solid white;
+.main-content > hr {
+  border: none;
+  height: 2px;
+  background: #dfdfdf;
+  width: 70%;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* font-family: "Poppins", sans-serif; */
-}
-
-.main-content > section {
-    background-color: rgb(40, 40, 40);
-    width: 80%;
-    padding: 10px;
+.button:hover {
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #007500;
+    color: #FFFFFF;
 }

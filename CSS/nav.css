@@ -125,7 +125,15 @@ nav {
 }
 
 .logo-text > a {
-    color: var(--color-text);
+    color: var(--color-accent1);
+}
+
+.dark-mode .logo-text{
+    -webkit-text-stroke: 0.5px var(--color-text);
+}
+
+.dark-mode .logo-text a {
+    -webkit-text-stroke: 0.5px var(--color-text);
 }
 
 nav > ul {
@@ -138,7 +146,7 @@ nav > ul {
     margin-right: 16px;
 }
 
-nav> ul > li > a {
+nav> ul > li > a, .theme-toggle {
     color: var(--color-text);
     font-size: var(--font-size-medium);
     padding: var(--padding-button);
@@ -157,13 +165,41 @@ nav > ul > li > a:hover, .active {
     cursor: default;
 }
 
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    fill: var(--color-bg);
+    background-color: var(--color-accent1);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-hover);
+}
+
+.theme-toggle svg:last-child {
+    display: none;
+}
+
+.dark-mode .theme-toggle svg:first-child {
+    display: none;
+}
+
+.dark-mode .theme-toggle svg:last-child {
+    display: block;
+    fill: var(--color-text);
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: var(--padding-container);
 }
 
 .main-content > section {
-    width: 70%;
+    width: 80%;
     padding: var(--padding-section);
+    margin: var(--margin-section);
 }

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/* ==============================
+   VARIABLES (SHARED)
+   ============================== */
+@import url(variables.css);
+
 /* ==============================
    MASTER THEME VARIABLES
    ============================== */
@@ -118,3 +124,53 @@ img {
     color: var(--color-bg);
     cursor: pointer;
 }
+
+/* ==============================
+   HOMEPAGE-SPECIFIC STYLES
+   ============================== */
+
+/* Hero Section (unique to index.html) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--margin-section);
+}
+
+.hero-img {
+  max-width: 400px;
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Section Divider (unique to index.html) */
+.section-divider {
+  width: 100%;
+  max-width: 600px;
+  height: 2px;
+  background: var(--color-gray);
+  border: none;
+  margin: var(--space-xl) 0;
+}
+
+/* About Section (unique to index.html) */
+#about {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: var(--padding-section) 0;
+}
+
+/* Responsive image for hero */
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Homepage-specific button override (if needed) */
+.hero .button {
+  margin-top: var(--space-md);
+}
+
+/* Add any other homepage-specific styles below */

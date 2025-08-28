@@ -1,0 +1,134 @@
+/* ==============================
+   MASTER THEME VARIABLES
+   ============================== */
+
+/* ===== Light Mode ===== */
+:root {
+  /* Color Palette */
+  --color-bg: #f7fafc;
+  --color-bg-alt: #f0f4f8;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #444;
+  --color-accent: #0077b6;
+  --color-accent-dark: #023e8a;
+  --color-accent1: #009688;
+  --color-accent2: #ffb703;
+  --color-accent3: #2196f3;
+  --color-accent4: #e63946;
+  --color-accent5: #0077b6;
+  --color-accent6: #ffb703;
+  --color-gray: #6c757d;
+  --color-gray-light: #bfc9d1;
+  --color-footer: #e9ecef;
+  --color-border: #e0e0e0;
+  --color-shadow: rgba(0,0,0,0.08);
+
+  /* Font Families */
+  --font-family-base: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --font-family-heading: 'Merriweather', Georgia, serif;
+  --font-family-logo: 'Fjalla One', 'Inter', Arial, sans-serif;
+  --font-family-button: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --font-family-mono: 'Fira Mono', 'Consolas', monospace;
+
+  /* Font Sizes */
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-base: 1.0625rem;
+  --font-size-md: 1.1875rem;
+  --font-size-lg: 1.375rem;
+  --font-size-xl: 1.75rem;
+  --font-size-xxl: 2.25rem;
+  --font-size-logo: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h1: 2.75rem;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.75;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.5px;
+
+  /* Spacing (Padding & Margin) */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+
+  --padding-button: var(--space-xs) var(--space-lg);
+  --padding-section: var(--space-xxl);
+  --padding-container: var(--space-lg);
+  --padding-input: var(--space-xs) var(--space-md);
+
+  --margin-section: var(--space-xl);
+  --margin-heading-top: var(--space-lg);
+  --margin-heading-bottom: var(--space-md);
+  --margin-paragraph: var(--space-md);
+
+  /* Border Radius */
+  --radius-xs: 2px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-light: 0 2px 8px var(--color-shadow);
+  --shadow-hover: 0 4px 16px var(--color-shadow);
+  --shadow-deep: 0 8px 32px rgba(0,0,0,0.12);
+
+  /* Max Widths */
+  --max-width-content: 700px;
+  --max-width-container: 1200px;
+  --max-width-nav: 180px;
+
+  /* Z-Index */
+  --z-nav: 1000;
+  --z-dropdown: 1100;
+  --z-modal: 1200;
+
+  /* Future-proofing */
+  --color-success: #43aa8b;
+  --color-warning: #ffd166;
+  --color-error: #e63946;
+  --color-info: #2196f3;
+  --radius-card: var(--radius-l);
+  --radius-modal: var(--radius-xl);
+  --shadow-card: 0 2px 12px var(--color-shadow);
+  --shadow-modal: 0 8px 32px var(--color-shadow);
+  --transition-fast: 0.15s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.6s;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+  --color-bg: #181c23;
+  --color-bg-alt: #23272f;
+  --color-text: #f4f6fb;
+  --color-text-secondary: #b0b8c1;
+  --color-accent: #00b4d8;
+  --color-accent-dark: #0077b6;
+  --color-accent1: #00b4d8;
+  --color-accent2: #ffd166;
+  --color-accent3: #90e0ef;
+  --color-accent4: #ff6f61;
+  --color-accent5: #023e8a;
+  --color-accent6: #ffd166;
+  --color-gray: #b0b8c1;
+  --color-gray-light: #23272f;
+  --color-footer: #23272f;
+  --color-border: #23272f;
+  --color-shadow: rgba(0,0,0,0.32);
+}

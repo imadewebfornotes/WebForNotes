@@ -201,13 +201,13 @@ body.dark-mode .theme-toggle .icon-dark {
   transition: 0.3s;
 }
 .nav-toggle.open .nav-toggle-bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(250%) rotate(45deg);
 }
 .nav-toggle.open .nav-toggle-bar:nth-child(2) {
   opacity: 0;
 }
 .nav-toggle.open .nav-toggle-bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-250%) rotate(-45deg);
 }
 @media (max-width: 900px) {
   nav {
@@ -333,4 +333,5 @@ footer {
   --transition-fast: 0.15s;
   --transition-normal: 0.3s;
   --transition-slow: 0.6s;
+
 }

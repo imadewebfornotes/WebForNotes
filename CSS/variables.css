@@ -64,6 +64,7 @@
   --space-lg: 1.5rem;
   --space-xl: 2rem;
   --space-xxl: 3rem;
+  --space-xxxl: 4rem;
 
   --padding-button: var(--space-xs) var(--space-lg);
   --padding-section: var(--space-xxl);

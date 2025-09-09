@@ -5,98 +5,18 @@
    VARIABLES (SHARED)
    ============================== */
 @import url(variables.css);
-
-/* ==============================
-   MASTER THEME VARIABLES
-   ============================== */
-
-/* ===== Light Mode ===== */
-:root {
-  /* Colors */
-  --color-bg: #F8F9FA;
-  --color-text: #212529;
-  --color-gray: rgba(0, 0, 0, 0.3);
-  --color-platinum: #e6e6e6;
-  --color-accent1: #4A90E2;  /* Calm Blue */
-  --color-accent2: #F5A623;  /* Warm Orange */
-  --color-accent3: #7ED321;  /* Fresh Green */
-  --color-accent4: #9B51E0;  /* Lavender */
-  --color-accent5: #50E3C2;  /* Muted Teal (Nav Bar) */
-  --color-accent6: #EB5757;  /* Soft Red */
-
-  /* Font Sizes */
-  --font-size-base: 1rem;       /* 16px */
-  --font-size-small: 0.875rem;  /* 14px */
-  --font-size-medium: 1.125rem; /* 18px */
-  --font-size-large: 1.5rem;    /* 24px */
-  --font-size-h1: 2.25rem;      /* 36px */
-  --font-size-h2: 1.75rem;      /* 28px */
-  --font-size-h3: 1.5rem;       /* 24px */
-  --font-size-logo: 2rem;       /* 32px */
-
-  /* Line Heights */
-  --line-height-text: 1.6;
-  --line-height-heading: 1.3;
-
-  /* Letter & Word Spacing */
-  --letter-spacing-normal: 0;
-  --letter-spacing-wide: 0.5px;
-  --word-spacing-normal: 0;
-  --word-spacing-wide: 1px;
-
-  /* Paragraph Spacing */
-  --paragraph-gap: 1rem;
-
-  /* Padding */
-  --padding-section: 3rem;      /* 48px */
-  --padding-container: 1.5rem;  /* 24px */
-  --padding-button: 0.625rem 1.25rem; /* 10px / 20px */
-
-  /* Margins */
-  --margin-heading-top: 1.5rem;
-  --margin-heading-bottom: 1rem;
-  --margin-section: 3rem;
-
-  /* Max Width for Readability */
-  --max-width-text: 65ch;
-
-  /* Fonts */
-  --font-family-base: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
-  --font-family-heading: 'Merriweather', Georgia, serif;
-  --font-family-button: 'Inter', 'Segoe UI', Roboto, sans-serif;
-
-  /* Radius */
-    --radius-xs: 2px;
-    --radius-s: 4px;
-    --radius-m: 6px;
-    --radius-l: 12px;
-    --radius-xl: 16px;
-    --radius-2xl: 30px;
-    --radius-circle: 50%;
-    --radius-pill: 360px;
-
-    /* Shadow */
-    --shadow-light: 0px 2px 4px 0px rgba(51, 55, 59, .08), 0px 1px 10px 0px rgba(51, 55, 59, .06);
-    --shadow-heavy: -10px 10px 80px rgba(0, 0, 0, .1);
-    --shadow-hover: 0 4px 12px rgba(0, 0, 0, .25);
-    --shadow-deep: 0px 16px 24px rgba(0, 0, 0, .07), 0px 6px 30px rgba(0, 0, 0, .06), 0px 8px 10px rgba(0, 0, 0, .1);
-    --shadow-diagram: 0px 2px 8px 0px rgba(32, 54, 161, .2);
-    --shadow-text: 0px 0px 24px #1b205b;
-    --shadow-outline: 0px 0px 60px 0px #80abfa66;
+/* Styling for logo */
+.logo-text {
+  color: var(--color-accent2);
+  text-decoration: none;
+  font-family: var(--font-family-logo);
+  font-size: var(--font-size-logo);
+  margin: var(--space-xs) var(--space-md);
+  cursor: default;
+  letter-spacing: var(--letter-spacing-wide);
 }
-
-/* ===== Dark Mode ===== */
-.dark-mode {
-  --color-bg: #0F0F0F;
-  --color-text: #EDEDED;
-  --color-gray: rgba(255, 255, 255, 0.3);
-  --color-platinum: rgb(25, 25, 25);
-  --color-accent1: #B56F1D;  /* Opposite Orange */
-  --color-accent2: #0A5DDC;  /* Opposite Blue */
-  --color-accent3: #64AE1F;  /* Opposite Green */
-  --color-accent4: #812CDE;  /* Opposite Magenta */
-  --color-accent5: #14A8A8;  /* Opposite Mint (Nav Bar) */
-  --color-accent6: #AF1C3D;  /* Opposite Coral */
+.logo-text > a {
+  color: var(--color-accent2);
 }
 
 img {
@@ -149,9 +69,9 @@ img {
   width: 100%;
   max-width: 600px;
   height: 2px;
-  background: var(--color-gray);
+  background: var(--color-border);
   border: none;
-  margin: var(--space-xl) 0;
+  margin: var(--space-xl) auto;
 }
 
 /* About Section (unique to index.html) */

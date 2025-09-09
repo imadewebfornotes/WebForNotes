@@ -1,0 +1,17 @@
+/* Styling for logo */
+.logo-text {
+  color: var(--color-accent2);
+  text-decoration: none;
+  font-family: var(--font-family-logo);
+  font-size: var(--font-size-logo);
+  margin: var(--space-xs) var(--space-md);
+  cursor: default;
+  letter-spacing: var(--letter-spacing-wide);
+}
+.logo-text > a {
+  color: var(--color-accent2);
+}
+a.logo-text:hover {
+  color: var(--color-accent1);
+  cursor: pointer;
+}

@@ -231,6 +231,7 @@ body.dark-mode .theme-toggle .icon-dark {
   }
   .logo-text {
     font-size: var(--font-size-lg);
+    margin: 0;
   }
 }
 @keyframes fadeIn {

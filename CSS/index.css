@@ -95,6 +95,7 @@ img {
 
 @media screen and (max-width: 1000px) {
   .logo-text {
-    font-size: var(--font-size-logo-sm);
+    font-size: var(--font-size-lg);
+    margin: 0;
   }
 }

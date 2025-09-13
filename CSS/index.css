@@ -93,4 +93,8 @@ img {
   margin-top: var(--space-md);
 }
 
-/* Add any other homepage-specific styles below */
+@media screen and (max-width: 1000px) {
+  .logo-text {
+    font-size: var(--font-size-logo-sm);
+  }
+}
